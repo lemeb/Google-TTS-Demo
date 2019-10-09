@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0A7FDB22ECF2CE006ABCA3 /* Google TTS Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Google TTS Demo.entitlements"; sourceTree = "<group>"; };
 		0C138BFE20BEFD8800E0F8F9 /* Google TTS Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google TTS Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C138C0120BEFD8800E0F8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C138C0320BEFD8800E0F8F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		0C138C0020BEFD8800E0F8F9 /* Google TTS Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0B0A7FDB22ECF2CE006ABCA3 /* Google TTS Demo.entitlements */,
 				0C138C0120BEFD8800E0F8F9 /* AppDelegate.swift */,
 				0C138C0320BEFD8800E0F8F9 /* ViewController.swift */,
 				0C138C0520BEFD8800E0F8F9 /* Main.storyboard */,
@@ -98,15 +100,16 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Alejandro Cotilla";
+				ORGANIZATIONNAME = "Léopold Mebazaa";
 				TargetAttributes = {
 					0C138BFD20BEFD8800E0F8F9 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
 			buildConfigurationList = 0C138BF920BEFD8800E0F8F9 /* Build configuration list for PBXProject "Google TTS Demo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -288,16 +291,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Google TTS Demo/Google TTS Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T3VGTCCBRD;
+				DEVELOPMENT_TEAM = AP5NXHA973;
 				INFOPLIST_FILE = "Google TTS Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carolco.Google-TTS-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "st.thetechnologi.tts-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,16 +311,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Google TTS Demo/Google TTS Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T3VGTCCBRD;
+				DEVELOPMENT_TEAM = AP5NXHA973;
 				INFOPLIST_FILE = "Google TTS Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carolco.Google-TTS-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "st.thetechnologi.tts-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

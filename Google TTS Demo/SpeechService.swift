@@ -18,7 +18,7 @@ enum VoiceType: String {
 }
 
 let ttsAPIUrl = "https://texttospeech.googleapis.com/v1beta1/text:synthesize"
-let APIKey = "<YOUR_API_KEY>"
+let APIKey = "AIzaSyBF7UnpAFb77W01Vi3pmbV-fLOk17iW-EE"
 
 class SpeechService: NSObject, AVAudioPlayerDelegate {
 
@@ -69,6 +69,7 @@ class SpeechService: NSObject, AVAudioPlayerDelegate {
         }
     }
     
+    
     private func buildPostData(text: String, voiceType: VoiceType) -> Data {
         
         var voiceParams: [String: Any] = [
@@ -112,7 +113,7 @@ class SpeechService: NSObject, AVAudioPlayerDelegate {
         let semaphore = DispatchSemaphore(value: 0)
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject] {
+            if let data = data, let json = ((try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]) as [String : AnyObject]??) {
                 dict = json!
             }
             
@@ -134,4 +135,6 @@ class SpeechService: NSObject, AVAudioPlayerDelegate {
         self.completionHandler!()
         self.completionHandler = nil
     }
+    
+
 }
